@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercicio 3 - Amanda Caroline de Gois Balcaçar</h1>
+    </header>
+    <section>
+        <h2>Formulário</h2>
+        <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome Completo"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(000) 00000-0000" pattern="\(\d{3}\) \d{5}-\d{4}" required><br><br>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required><br><br>
+        <label for="birthday">Data de Nascimento:</label>
+        <input type="date" id="birthday" name="birthday" required><br><br>
+        <label for="sexoMasc">Sexo:</label>
+        <input type="radio" id="sexoMasc" name="sexoMasc" value="masculino">Masculino
+        <input type="radio" id="sexoFem" name="sexoFem" value="feminino">Feminino <br><br>
+        <label for="color">Cor Favorita:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Tabela</h2>
+        <h2>Jogos preferidos</h2>
+        <table>
+            <tr>
+                <th>Categoria</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Jogos Eletrônicos</td>
+              <td>Mario Party</td>
+              <td>R$ 159,99</td>
+              <td>1</td>
+            </tr>
+              <tr>
+                <td>The Legends of Zelda</td>
+              <td>R$ 350,00</td>
+              <td>1</td>
+            </tr>
+              <tr>
+                <td>Castle os Illusion</td>
+              <td>R$ 259,00</td>
+              <td>1</td>
+            </tr>
+          <tr>
+            <td rowspan="2">Brinquedo</td>
+              <td>Carrinhos - Hot Wheels - Pacote com 5 Carros</td>
+              <td>R$ 74,99</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Lego Classic - Caixa pequena</td>
+              <td>R$ 199,90</td>
+              <td>2</td>
+            </tr> 
+            <tr>  
+            <td colspan="2">Total</td>
+                <td>R$ 1394,66</td>
+                <td>8</td>
+            </tr>
+          </table>
+    </section>
+    <section>
+        <h2>Listas</h2>
+        <h2>Lista Enumerada</h2>
+        <ol>
+            <li>Chrome (72,37%)</li>
+            <li>Opera (10,01%)</li>
+            <li>Edge (8,75%)</li>
+            <li>Firefox (5,23%)</li>
+            <li>Safari (1,46%)</li>
+        </ol>
+        <h2>Lista de Definição</h2>
+        <dl>
+            <dt>SGML</dt>
+            <dd>Standard Generalized Markup Language é uma linguagem de marcação padrão, também sendo uma metalinguagem de marcação para definição de outras linguagens de marcação.</dd>
+            <dt>XML</dt>
+            <dd>Extensible Markup Language (Linguagem de Marcação Extensível) é uma de linguagem de marcação derivada da linguagem SGML, utilizada para compartilhamento fácil de informações.</dd>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language (Linguagem de Marcação de Hipertexto) é uma de linguagem de marcação derivada da linguagem SGML criada para conteúdos hipertexto.            </dd>
+        </dl>
+        <h2>Lista</h2>
+        <ul>
+            <li>Chrome (72,37%)</li>
+            <li>Opera (10,01%)</li>
+            <li>Edge (8,75%)</li>
+            <li>Firefox (5,23%)</li>
+            <li>Safari (1,46%)</li>
+        </ul>
+    </section>
+</body>
+</html>
+
