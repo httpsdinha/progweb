@@ -1,0 +1,14 @@
+body {
+	/*é preciso definir o tamanho do body para posicionar corretamente o div*/
+	height: 100vh; /*vh é igual a 1/100 da altura da viewport. Se a altura do navegador é 800px -> 1vh = 8px*/
+	width: 100vw; /*vw é igual a 1/100 da largura da viewport. Se a largura do navegador é 600px -> 1vh = 6px*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#quadrado {
+	height: 25vh;
+	width: 25vw;
+	background-color: gray;
+}
