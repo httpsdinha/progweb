@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<header>
+    <h1>Formulário</h1>
+</header>
+<body>
+    <form>
+        <label for="rga">RGA:</label>
+        <span id="rgaErro">Preencha corretamente o RGA</span>
+        <input type="text" id="rga" name="rga" placeholder="0000.0000.000-0" pattern="\d{4}\.\d{4}\.\d{3}-\d{1}" onfocusout="validarRGA()">
+
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Nome Sobrenome" required onkeyup="validarSenha()">   
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" onkeyup="verificarSenha()" required>
+        <label for="confirmar">Confirme a Senha:</label>
+        <span id="senhaErro">As senhas não coincidem</span>
+        <input type="password" id="confirmar" name="confirmar" onfocusout="validarSenha()" required>
+
+        <fieldset>
+            <legend>Tipo de Permissão</legend>
+            <input type="radio" id="estudante" name="estudante" value="Estudante">
+            <label for="estudante">Estudante</label>
+            <input type="radio" id="monitor" name="monitor" value="Monitor">
+            <label for="monitor">Monitor</label>
+            <input type="radio" id="ouvinte" name="ouvinte" value="Ouvinte">
+            <label for="ouvinte">Ouvinte</label>
+        </fieldset>
+
+        <label for="data">Data de Inicio das Atividades</label>
+        <span id="dataErro">Preencha uma data valida</span>
+        <input type="date" id="data" name="data" onfocusout="validarData()" required>
+                
+        <button type="submit" id="submit" name="submit">Enviar</button>
+        <br>
+        <section id="requisitos" style="display:none;">
+            <label class="senha"> A senha deve ter: </label>
+            <ul>
+                <li id="tamanhoValido" class="invalido">Entre 6 e 15 caracteres</li>
+                <li id="maiusculaValida" class="invalido">Pelo menos uma letra maiúscula</li>
+                <li id="minusculaValida" class="invalido">Pelo menos uma letra minúscula</li>
+                <li id="numeroValido" class="invalido">Pelo menos um número</li>
+                <li id="especialValido" class="invalido">Pelo menos um caractere especial</li>
+            </ul>
+        </section>
+    </form>
+</body>
+</html>

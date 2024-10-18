@@ -1,0 +1,55 @@
+body {
+	font: 1em sans-serif;
+}
+
+form {
+	margin: 10px;
+	padding: 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="submit"] {
+	display: block;
+}
+label.fieldset {
+	color: red;
+}
+
+input,
+fieldset {
+	border: 1px solid #333;
+	margin: 10px;
+}
+
+span {
+	margin-bottom: 10px;
+	color: red;
+	font-style: italic;
+	font-size: 80%;
+	display: none;
+}
+
+.senha,
+li,
+li.invalido,
+li.valido {
+	font-size: 80%;
+	margin-left: 30px;
+}
+
+ul {
+	margin-top: 0px;
+}
+li.invalido {
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+}
+li.valido {
+	color: green;
+	font-style: none;
+	font-weight: none;
+}
