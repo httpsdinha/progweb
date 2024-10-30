@@ -1,5 +1,8 @@
 package com.example.progweb.progweb.calc;
 
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+
 public class Calculadora {
 
     public static int calcular(int a, int b, String op) {
@@ -42,4 +45,6 @@ public class Calculadora {
     public static int divisao(int a, int b) {
         return a / b;
     }
+
+    
 }
