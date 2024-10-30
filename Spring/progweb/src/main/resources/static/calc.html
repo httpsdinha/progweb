@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form action="/calc" method="POST">
+        <label for="valorA">Valor A:</label>
+        <input type="number" id="valorA" name="a">
+        <br>
+        <label for="valorB">Valor B:</label>
+        <input type="number" id="valorB" name="b">
+        <br>
+</body>
+<fieldset>
+    <legend>Operações</legend>
+    <input type="radio" id="soma" name="op" value="soma">
+    <label for="soma">Soma</label>
+    <br>
+    <input type="radio" id="subtracao" name="op" value="subtracao">
+    <label for="subtracao">Subtração</label>
+    <br>
+    <input type="radio" id="multiplicacao" name="op" value="multiplicacao">
+    <label for="multiplicacao">Multiplicação</label>
+    <br>
+    <input type="radio" id="divisao" name="op" value="divisao">
+    <label for="divisao">Divisão</label>
+</fieldset>
+<input type="submit" value="Calcular">
+</form>
+</html>

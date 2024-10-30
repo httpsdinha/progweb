@@ -21,13 +21,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
       return "<p>(GET) o resultado da soma é: "+result+"</p>";  
     }
 
-    @PostMapping("/soma")
+    @PostMapping("/calc")
     @ResponseBody  
     public String somaPost(
       @RequestParam(name = "a", defaultValue = "0") int a, 
-      @RequestParam(name = "b", defaultValue = "0") int b)
-      
-      {int result = Calculadora.soma(a, b);
+      @RequestParam(name = "b", defaultValue = "0") int b,
+      @RequestParam(name = "op", defaultValue = "soma") String op)
+      {int result = Calculadora.calcular(a, b, op);
         return "<p>(POST) o resultado da soma é: "+result+"</p>";  
       }
  }
